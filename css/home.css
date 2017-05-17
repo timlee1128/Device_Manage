@@ -1,5 +1,5 @@
-#bg {position: absolute; z-index: 0;}
 * {position: relative; z-index: 1;}
+#bg {position: absolute; z-index: 0;}
 
 #nav {width: 100%; height: 0.72rem; line-height: 0.72rem; text-align: center;}
 .nav_title {font-size: 0.24rem; color: #4fc7ff;}
@@ -8,7 +8,12 @@
 .nav_right {background: green; position: absolute; top: 0; right: 0; width: 10%;}
 
 #content {margin: 0.41rem 1% 0.08rem 1%; height: 9.4rem;}
-.content_nav {border: 1px solid #2c5b7b; width: 13%; height: 100%; background: url(../img/content_nav_bg.png) repeat;}
+
+.content_nav {padding: 2px; border: 1px solid #2c5b7b; width: 13%; height: 100%; background: url(../img/content_nav_bg.png) repeat;}
+.content_nav a {display: block; margin-bottom: 2px; padding: 0 15%; border: 1px solid #377095; height: .88rem; line-height: .88rem; font-size: .25rem; color: #a3a7ac;}
+.content_nav i {position: absolute; top: 0; left:0; width: 3%; height: 80%; background: #fff;}
+
+
 .content_body {position: relative; width: 86%; height: 100%;}
 .content_body_nav li {position: absolute; top: 0; left: 0; z-index: 3; width: 10%; height: .42rem; background: purple;}
-.content_body_map {margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 8.98rem; background: url(../img/content_bg.png) repeat;}
+.content_body_map {margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 9.02rem; background: url(../img/content_bg.png) repeat;}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+</head>
+<body>
+<img src="../img/DM_bg.png" id="bg">
+<div id="nav">
+  <h3 class="nav_title">当前小区: <span>深圳万家灯火</span><button>切换小区</button></h3>
+  <ul class="nav_right">
+    <li class="user fl"><i></i><span>admin</span></li>
+    <li class="exit fl"><i></i><span>退出登录</span></li>
+  </ul>
+</div>
+<div id="content">
+  <ul class="content_nav fl">
+    <li><a href="#"><i></i>首页</a></li>
+    <li><a href="#"><i></i>小区管理</a></li>
+    <li><a href="#"><i></i>摄像头管理</a></li>
+    <li><a href="#"><i></i>地图审核</a></li>
+  </ul>
+  <div class="content_body fr">
+    <ul class="content_body_nav">
+      <li><a href="#">小区地图</a></li>
+    </ul>
+    <div class="content_body_map"></div>
+  </div>
+</div>
+<script src="../js/common.js"></script>
+<script>
+window.onload = function() {
+  resize();
+  window.onresize = function() {
+    resize();
+  }
+  function resize() {
+    var viewport = getViewportSize();
+    var mapRatio = {
+      w: viewport.w / 1920,
+      h: viewport.h / 1080
+    };
+    console.log(viewport.h);
+    var rem = 100 * mapRatio.h;
+    document.getElementById('bg').style.width = viewport.w + 'px';
+    document.getElementById('bg').style.height = viewport.h + 'px';
+    document.documentElement.style.fontSize = rem + 'px';
+    console.log(rem);
+  }
+}
+</script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+</html>

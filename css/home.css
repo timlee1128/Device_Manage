@@ -1,0 +1,14 @@
+#bg {position: absolute; z-index: 0;}
+* {position: relative; z-index: 1;}
+
+#nav {width: 100%; height: 0.72rem; line-height: 0.72rem; text-align: center;}
+.nav_title {font-size: 0.24rem; color: #4fc7ff;}
+.nav_title button {margin: -2px 0 0 2%; border: none; background: #498ed5; font-size: 0.19rem; color: #fff; cursor: pointer;}
+
+.nav_right {background: green; position: absolute; top: 0; right: 0; width: 10%;}
+
+#content {margin: 0.41rem 1% 0.08rem 1%; height: 9.4rem;}
+.content_nav {border: 1px solid #2c5b7b; width: 13%; height: 100%; background: url(../img/content_nav_bg.png) repeat;}
+.content_body {position: relative; width: 86%; height: 100%;}
+.content_body_nav li {position: absolute; top: 0; left: 0; z-index: 3; width: 10%; height: .42rem; background: purple;}
+.content_body_map {margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 8.98rem; background: url(../img/content_bg.png) repeat;}

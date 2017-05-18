@@ -1,19 +1,39 @@
 * {position: relative; z-index: 1;}
 #bg {position: absolute; z-index: 0;}
 
-#nav {width: 100%; height: 0.72rem; line-height: 0.72rem; text-align: center;}
-.nav_title {font-size: 0.24rem; color: #4fc7ff;}
-.nav_title button {margin: -2px 0 0 2%; border: none; background: #498ed5; font-size: 0.19rem; color: #fff; cursor: pointer;}
+#nav {width: 100%; height: 0.72rem; text-align: center;}
+.nav_title {height: .72rem; line-height: .72rem; font-size: 0.24rem; color: #4fc7ff;}
+#shift_zone {display: inline-block; margin: -2px 0 0 2%; border: none; width: 7%; height: .32rem; line-height: .32rem; background: #498ed5; font-size: 0.19rem; color: #fff; cursor: pointer;}
 
-.nav_right {background: green; position: absolute; top: 0; right: 0; width: 10%;}
+.nav_right {position: absolute; top: 0; right: 0; margin-right: 2%;}
+.nav_right a {display: inline-block; margin: .1rem 30px 0 0; min-width: 33px; height: 47px; text-align: center;}
+.nav_right i {display: inline-block; width: 31px; height: 31px; background: url(../img/icons.png) -262px -225px;}
+.nav_right span {display: block; color: #00aeff;}
+.user:hover i {background-position: -262px -266px;}
+.user:hover span {color: #fff;}
+
+.exit a {margin-right: 0;}
+.exit i {background-position: -312px -225px;}
+.exit span {color: #ff7f48;}
+.exit:hover i {background-position: -312px -266px;}
+.exit:hover span {color: #fff;}
 
 #content {margin: 0.41rem 1% 0.08rem 1%; height: 9.4rem;}
 
 .content_nav {padding: 2px; border: 1px solid #2c5b7b; width: 13%; height: 100%; background: url(../img/content_nav_bg.png) repeat;}
-.content_nav a {display: block; margin-bottom: 2px; padding: 0 15%; border: 1px solid #377095; height: .88rem; line-height: .88rem; font-size: .25rem; color: #a3a7ac;}
-.content_nav i {position: absolute; top: 0; left:0; width: 3%; height: 80%; background: #fff;}
+.content_nav a {display: block; margin-bottom: 2px; padding-left: 30%; border: 1px solid #377095; height: .88rem; line-height: .88rem; font-size: .25rem; color: #a3a7ac;}
+.content_nav a:hover {background: #083b6e;}
+.content_nav i {position: absolute; top: 25%; left: 10%; width: 35px; height: 34px; background: url(../img/icons.png) 0 0;}
+.zone_manage i {background-position: -425px -126px;}
+.zone_manage:hover > i {background-position: -372px -126px;}
+.camera_manage i {background-position: -428px -170px;}
+.camera_manage:hover > i {background-position: -375px -170px;}
+.map_check i {top: 32%; background-position: -425px -217px;}
+.map_check:hover > i {top: 32%; background-position: -372px -217px;}
+
 
 
 .content_body {position: relative; width: 86%; height: 100%;}
-.content_body_nav li {position: absolute; top: 0; left: 0; z-index: 3; width: 10%; height: .42rem; background: purple;}
-.content_body_map {margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 9.02rem; background: url(../img/content_bg.png) repeat;}
+.content_body_nav a {position: absolute; top: 1px; left: -1px; z-index: 3; width: 182px; height: .42rem; line-height: .42rem; color: #fff; font-size: .2rem; text-indent: .5rem; background: url(../img/nav_zone_map_bg.png) no-repeat;}
+.content_body_map {position: absolute; z-index: 1; margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 9.02rem; background: url(../img/content_bg.png) repeat;}
+

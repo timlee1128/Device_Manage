@@ -9,24 +9,24 @@
 <body>
 <img src="../img/DM_bg.png" id="bg">
 <div id="nav">
-  <h3 class="nav_title">当前小区: <span>深圳万家灯火</span><button>切换小区</button></h3>
+  <h3 class="nav_title">当前小区: <span>深圳万家灯火</span><button id="shift_zone">切换小区</button></h3>
   <ul class="nav_right">
-    <li class="user fl"><i></i><span>admin</span></li>
-    <li class="exit fl"><i></i><span>退出登录</span></li>
+    <li class="user fl"><a href="#"><i></i><span>admin</span></a></li>
+    <li class="exit fl"><a href="#"><i></i><span>退出登录</span></a></li>
   </ul>
 </div>
 <div id="content">
   <ul class="content_nav fl">
-    <li><a href="#"><i></i>首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-    <li><a href="#"><i></i>小区管理</a></li>
-    <li><a href="#"><i></i>摄像头管理</a></li>
-    <li><a href="#"><i></i>地图审核</a></li>
+    <li><a href="#" class="home"><i></i>首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+    <li><a href="#" class="zone_manage"><i></i>小区管理</a></li>
+    <li><a href="#" class="camera_manage"><i></i>摄像头管理</a></li>
+    <li><a href="#" class="map_check"><i></i>地图审核</a></li>
   </ul>
   <div class="content_body fr">
-    <ul class="content_body_nav">
-      <li><a href="#">小区地图</a></li>
-    </ul>
     <div class="content_body_map"></div>
+    <ul class="content_body_nav">
+      <li><a href="#">小区地图：</a></li>
+    </ul>
   </div>
 </div>
 <script src="../js/common.js"></script>

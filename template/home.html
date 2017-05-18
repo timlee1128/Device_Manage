@@ -23,34 +23,35 @@
     <li><a href="#" class="map_check"><i></i>地图审核</a></li>
   </ul>
   <div class="content_body fr">
-    <div class="content_body_map"></div>
+    <div class="content_body_map">
+      <img src="../img/map.png" alt="地图" />
+    </div>
     <ul class="content_body_nav">
       <li><a href="#">小区地图：</a></li>
     </ul>
   </div>
 </div>
+<div id="pop_up">
+  <div id="pop_up_shade"></div>
+  <div id="pop_up_content">
+    <i></i>
+    <select id="province">
+      <option value="江西省">江西省</option>
+    </select>
+    <select id="city">
+      <option value="上饶市">上饶市</option>
+    </select>
+    <select id="county">
+      <option value="鄱阳县">鄱阳县</option>
+    </select>
+    <select id="residence">
+      <option value="见天区">见天区</option>
+    </select>
+    <button>确定</button>
+  </div>
+</div>
 <script src="../js/common.js"></script>
-<script>
-window.onload = function() {
-  resize();
-  window.onresize = function() {
-    resize();
-  }
-  function resize() {
-    var viewport = getViewportSize();
-    var mapRatio = {
-      w: viewport.w / 1920,
-      h: viewport.h / 1080
-    };
-    console.log(viewport.h);
-    var rem = 100 * mapRatio.h;
-    document.getElementById('bg').style.width = viewport.w + 'px';
-    document.getElementById('bg').style.height = viewport.h + 'px';
-    document.documentElement.style.fontSize = rem + 'px';
-    console.log(rem);
-  }
-}
-</script>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/home.js"></script>
 </body>
 </html>

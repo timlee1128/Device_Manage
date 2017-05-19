@@ -37,10 +37,12 @@
 .content_body_nav a {position: absolute; top: 1px; left: -1px; z-index: 3; width: 182px; height: .42rem; line-height: .42rem; color: #fff; font-size: .2rem; text-indent: .5rem; background: url(../img/nav_zone_map_bg.png) no-repeat;}
 .content_body_map {position: absolute; z-index: 1; margin-top: .42rem; border: 1px solid #377196; width: 99.9%; height: 9.02rem; background: url(../img/content_bg.png) repeat;}
 .content_body_map img {margin: .34rem 2%; border: 2px solid #245a91; width: 96%; height: 8.33rem;}
+#no_map_tip {display: none; position: absolute; top: 3.68rem; left: 4.5rem; font-size: .3rem; color: #fff;}
+#no_map_tip a {color: #73deff; text-decoration: underline;}
 /* 内容区结束 */
 
 /* 弹出层 */
-#pop_up {display: inline-block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+#pop_up {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 #pop_up_shade {z-index: 10; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7)}
 #pop_up_content {position: absolute; top: 15%; left: 30%; z-index: 20; width: 8.57rem; height: 4.42rem; background: url(../img/pop_up_bk.png) no-repeat; background-size: cover;}
 #pop_up_content i {position: absolute; top: .18rem; left: 8.08rem; width: .26rem; height: .26rem; cursor: pointer;}

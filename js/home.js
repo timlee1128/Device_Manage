@@ -26,4 +26,14 @@ $(function() {
   $('#pop_up_shade, #pop_up_content i').click(function() {
     $('#pop_up').hide();
   })
+
+  // No map junge
+  var noMap = true;
+  if (noMap) {
+    $('#map').attr('src', '../img/no_map.png');
+    $('#no_map_tip').show();
+  } else {
+    $('#map').attr('src', '../img/map.png');
+    $('#no_map_tip').hide();
+  }
 });

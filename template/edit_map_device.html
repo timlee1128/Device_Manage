@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>小区管理</title>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/edit_map_device.css" />
+</head>
+<body>
+<img src="../img/DM_bg.png" id="bg">
+<div id="nav">
+  <h3 class="nav_title">当前小区: <span>深圳万家灯火</span><button id="shift_zone">切换小区</button></h3>
+  <ul class="nav_right">
+    <li class="user fl"><a href="#"><i></i><span>admin</span></a></li>
+    <li class="exit fl"><a href="#"><i></i><span>退出登录</span></a></li>
+  </ul>
+</div>
+<div id="content">
+  <ul class="content_nav fl">
+    <li><a href="#" class="home"><i></i>首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+    <li><a href="#" class="zone_manage"><i></i>小区管理</a></li>
+    <li><a href="#" class="camera_manage"><i></i>摄像头管理</a></li>
+    <li><a href="#" class="map_check"><i></i>地图审核</a></li>
+  </ul>
+  <div class="content_body fr">
+    <div class="content_body_map">
+      <img src="../img/edit_map_device.png" />
+      <img id="map" src="../img/no_map.png" />
+      <button id="edit_map_cancel">取消</button>
+      <button id="edit_map_submit">保存</button>
+      <div id="devices">
+        <h4>
+          <span>摄像头标签</span>
+          <i></i>
+        </h4>
+        <ul>
+          <li><a href="#">一栋一单元南门</a></li>
+          <li><a href="#">一栋一单元南门</a></li>
+        </ul>
+        <ul>
+          <li><a id="devices_list_prev" href="javascript:;">上一页</a></li>
+          <li><a id="devices_list_next" href="javascript:;">下一页</a></li>
+        </ul>
+      </div>
+    </div>
+    <ul class="content_body_nav">
+      <li><a id="map_manage" href="#">地图管理</a></li>
+      <li><a id="zone_info" href="#">小区档案</a></li>
+    </ul>
+  </div>
+</div>
+<div id="pop_up">
+  <div id="pop_up_shade"></div>
+  <div id="pop_up_content">
+    <i></i>
+    <select id="province">
+      <option value="江西省">江西省</option>
+    </select>
+    <select id="city">
+      <option value="上饶市">上饶市</option>
+    </select>
+    <select id="county">
+      <option value="鄱阳县">鄱阳县</option>
+    </select>
+    <select id="residence">
+      <option value="见天区">见天区</option>
+    </select>
+    <button>确定</button>
+  </div>
+</div>
+<script src="../js/common.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/edit_map_device.js"></script>
+</body>
+</html>
